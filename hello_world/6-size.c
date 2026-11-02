@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * int main is the entry point of the script
- * printf should hopefully execute the script as desired
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
