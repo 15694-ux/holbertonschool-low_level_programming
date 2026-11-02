@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* main - This will randomly generate a number and indicate where it is positive, negative, or zero */
+/* main - randomly choose a number, state if it is positive, negative, or zero */
 int main(void)
 {
 	int n;
