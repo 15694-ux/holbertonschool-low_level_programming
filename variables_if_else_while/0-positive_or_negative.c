@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* main - This will randomly generate a number and indicate where it is positive, negative, or zero */
 int main(void)
 {
 	int n;
