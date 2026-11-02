@@ -3,7 +3,10 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* main - randomly choose a number, state if it is positive, negative, or zero */
+/* main - randomly choose a number
+ *  state if it is positive, negative, or zero
+ *  return - 0 (Success)
+ */
 int main(void)
 {
 	int n;
