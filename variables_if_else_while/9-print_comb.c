@@ -8,19 +8,17 @@
  * Return: Always 0 (Success)
  */
 
-void onetonine_commas(unsigned long long n)
-
+int main(void)
 {
-	if (n < 10) {
-		putchar('0' + n);
-		return;
+	for (i = 0; i <= 9; i++)
+	{
+		putchar('0' + i);
+		if (i < 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-
-	onetonine_commas(n / 10);
-
-	static int number_count = 0;
-	number_count++;
-
-	putchat('\n');
+	putchar('\n')
 	return(0);
 }
