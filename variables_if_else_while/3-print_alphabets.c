@@ -10,8 +10,6 @@ int main(void)
 
 {
 	char lower;
-	char upper;
-
 	char upper = toupper(lower);
 
 	for (lower = 'a'; lower <= 'z'; lower++; upper = 'A'; upper <= 'Z'; upper++)
