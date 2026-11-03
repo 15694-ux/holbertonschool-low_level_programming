@@ -12,14 +12,13 @@ int main(void)
 
 {
 	char lower;
-	char upper = toupper(lower);
+	char upper;
 
-	for (lower = 'a', upper = 'A'; lower <= 'z' && upper <= 'Z'; lower++, upper++)
-
-	{
-		putchar(lower);
+	for (lower = 'a'; lower <= 'z'; lower++) {
+		upper = toupper(lower);
 		putchar(upper);
 	}
+
 	putchar('\n');
 	return (0);
 }
