@@ -16,7 +16,7 @@ int main(void)
 	for (i = 0; i <= 9; i++)
 		
 	{	
-		putint(i)
+		putint(i);
 	}
 	putint('\n');
 	return (0);
