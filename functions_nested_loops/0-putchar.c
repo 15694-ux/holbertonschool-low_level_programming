@@ -2,7 +2,6 @@
 #include <main.h>
 
 /**
- *
  * main - Entry point of program
  *
  * Return: Always 0 (Success)
