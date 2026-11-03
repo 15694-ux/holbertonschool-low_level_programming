@@ -16,8 +16,8 @@ int main(void)
 	for (i = 0; i <= 9; i++)
 		
 	{	
-		putint(i);
+		putchar(i);
 	}
-	putint('\n');
+	putchar('\n');
 	return (0);
 }
