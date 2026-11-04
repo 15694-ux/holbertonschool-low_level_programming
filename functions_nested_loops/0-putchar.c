@@ -1,15 +1,22 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - Should hopefully print putchar
+ * main - entry point
+ *
+ * description: prints putchar
  *
  * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	write("_putchar");
-	putchar('\n');
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
