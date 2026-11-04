@@ -3,10 +3,18 @@
 /**
  * main - will print the alphabet
  *
+ * print_alphabet - will print the alphabet in one line
+ *
  * Return: Always 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char i = 'a';
+
+	while (i <= 'z')
+	{
+		_putchar(i);
+		i = i + 1;
+	}
+	_putchar('\n');
 }
