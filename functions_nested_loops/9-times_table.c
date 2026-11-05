@@ -1,18 +1,17 @@
 #include "main.h"
 /**
  * times_tables - prints the 9 times tables starting at 0
- * Return: Always 0
  */
 
-void times_tables(void)
+void times_table(void)
 {
-	int row = 0;
+	int = row;
 
-	while (row < 10)
+	while (row < 0)
 	{
-		int = col;
+		int col = 0;
 
-		while (col < 10)
+		while (col < 0)
 		{
 			int result = row * col;
 
@@ -20,9 +19,9 @@ void times_tables(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-				if (result >= 10)
+				if (result < 10)
 				{
-					_putchar('0');
+					_putchar(' ');
 				}
 			}
 			if (result >= 10)
