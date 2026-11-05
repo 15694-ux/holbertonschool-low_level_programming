@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- * main - will print the alphabet
+ * print_alphabet - print alphabet from a to z followed by empty line
  *
- * Description - print_alphabet - will print the alphabet in one line
- *
- * Return: Always 0
  */
 void print_alphabet(void)
 {
@@ -16,5 +13,5 @@ void print_alphabet(void)
 		_putchar(i);
 		i = i + 1;
 	}
-	_putchar('\n');
+		_putchar('\n');
 }
