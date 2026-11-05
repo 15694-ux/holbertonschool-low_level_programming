@@ -3,7 +3,7 @@
 /**
  * main - will print the alphabet
  *
- * print_alphabet - will print the alphabet in one line
+ * Description - print_alphabet - will print the alphabet in one line
  *
  * Return: Always 0
  */
