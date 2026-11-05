@@ -5,7 +5,7 @@
 
 void times_table(void)
 {
-	int = row;
+	int row = 0;
 
 	while (row < 0)
 	{
