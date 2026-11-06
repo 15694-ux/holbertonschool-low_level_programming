@@ -12,5 +12,5 @@ void more_numbers(void)
 		i = i + 1;
 	}
 	_putchar('\n');
-	return (0);
+	return;
 }
