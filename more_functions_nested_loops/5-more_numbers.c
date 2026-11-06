@@ -18,6 +18,7 @@ void more_numbers(void)
 				_putchar((c / 10) + '0');
 			}
 			_putchar((c % 10) + '0');
+			c = c + 1;
 		}
 		_putchar('\n');
 		i = i + 1;
