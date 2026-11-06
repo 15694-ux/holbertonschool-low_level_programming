@@ -12,17 +12,17 @@ int main (void)
 	{
 		if ((i % 3) == 0 && (i % 5) == 0)
 		{
-			printf("fIzZbUzZ");
+			printf(" fIzZbUzZ");
 			i = i + 1;
 		}
 		else if ((i % 3) == 0)
 		{
-			printf("FiZz");
+			printf(" FiZz");
 			i = i + 1;
 		}
 		else if ((i % 5) == 0)
 		{
-			printf("bUzZ");
+			printf(" bUzZ");
 			i = i + 1;
 		}
 		else
@@ -32,7 +32,7 @@ int main (void)
 				printf("%d", i);
 				i = i + 1;
 			}
-			printf("%d", i);
+			printf(" %d", i);
 			i = i + 1;
 		}
 	}
