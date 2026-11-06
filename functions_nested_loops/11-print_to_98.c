@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - will print all numbers from 0 to 98 with comma separators
  * @n: the value to be used
