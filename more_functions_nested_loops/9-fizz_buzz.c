@@ -32,7 +32,7 @@ in main (void)
 				printf("%d", i);
 				i = i + 1;
 			}
-			printf("%D", i);
+			printf("%d", i);
 			i = i + 1;
 		}
 	}
