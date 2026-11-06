@@ -4,13 +4,22 @@
  */
 void more_numbers(void)
 {
-	int i = 0;
+	int i;
+	int c;
 
-	while (i <= 14)
+	i = 0;
+	while (i <= 9)
 	{
-		_putchar(i);
+		c = 0;
+		while (c >= 14)
+		{
+			if (c >= 10)
+			{
+				_putchar((c / 10) + '0');
+			}
+			_putchar((c % 10) + '0');
+		}
+		_putchar('\n');
 		i = i + 1;
 	}
-	_putchar('\n');
-	return;
 }
