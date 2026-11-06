@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * print_most_numbers - will print all but 2 and 4
- * @ch: value to be checked
+ * @c: value to be checked
  * Return: Always 0
  */
-void print_most_numbers(void);
+void print_most_numbers(void)
 {
 	int = c;
 
