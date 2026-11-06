@@ -4,14 +4,14 @@
  */
 void more_numbers(void)
 {
-	int i;
 	int c;
+	int i;
 
 	i = 0;
 	while (i <= 9)
 	{
 		c = 0;
-		while (c >= 14)
+		while (c <= 14)
 		{
 			if (c >= 10)
 			{
