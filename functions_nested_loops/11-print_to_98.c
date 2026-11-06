@@ -42,7 +42,7 @@ void print_to_98(int n)
 			}
 			else
 			{
-				printf("%d, ", 1);
+				printf("%d, ", i);
 			}
 			i = i - 1;
 		}
