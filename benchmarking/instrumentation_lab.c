@@ -54,6 +54,24 @@ int main(void)
 {
     unsigned long checksum;
 
+    clock_t start, end;
+    double build_time;
+    
+    start = clock();
+    build_dataset();
+    end = clock();
+    build_time = (double)(end - start) / CLOCKS_PER_SEC;
+
+    start = clock();
+    process_dataset();
+    end = clock();
+    build_time = (double)(end - start) / CLOCKS_PER_SEC;
+
+    start = clock();
+    reduce_checksum();
+    end = clock();
+    build_time = (double)(end - start) / CLOCKS_PER_SEC;
+
     /* Students must add clock-based timing and print required lines. */
 
     build_dataset();
