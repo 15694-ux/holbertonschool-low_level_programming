@@ -75,6 +75,12 @@ int main(void)
     end_time = clock();
     build_start_time = start_time;
     build end_time = end_time;
+    start_time = clock();
+    process_dataset();
+    end_time = clock();
+    process_start_time;
+    process_end_time;
+
 
 
 
