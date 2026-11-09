@@ -77,9 +77,13 @@ int main(void)
     build_dataset();
     process_dataset();
     checksum = reduce_checksum();
-
     if (checksum == 0ul)
-        printf("impossible\n");
+	printf("impossible\n");
+
+    printf("Total time is: %f", reduce_checksum + process_dataset, build_dataset);
+    printf("Build Dataset time: %f", build_dataset);
+    printf("Process Dataset time: %f", reduce_checksum);
+
 
     /* Required output (exact format, no extra lines):
      * TOTAL seconds: <float>
