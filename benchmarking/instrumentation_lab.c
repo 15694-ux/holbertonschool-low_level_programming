@@ -53,36 +53,37 @@ static unsigned long reduce_checksum(void)
 int main(void)
 {
     unsigned long checksum;
+    clock_t start_time;
+    clock_t end_time;
+    clock_t build_start;
+    clock_t build_end;
+    clock_t process_start;
+    clock_t process_end;
+    clock_t reduce_start;
+    clock_t reduce_end;
+    clock_t total_build;
+    clock_t total_process;
+    clock_t totale_reduce;
+    double build_seconds;
+    double process_seconds;
+    double reduce_seconds;
+    clock_t total_time;
+    double total_seconds;
 
-    clock_t start, end;
-    double build_time;
-    
-    start = clock();
+    start_time = clock();
     build_dataset();
-    end = clock();
-    build_time = (double)(end - start) / CLOCKS_PER_SEC;
+    end_time = clock();
+    build_start_time = start_time;
+    build end_time = end_time;
 
-    start = clock();
-    process_dataset();
-    end = clock();
-    build_time = (double)(end - start) / CLOCKS_PER_SEC;
 
-    start = clock();
-    reduce_checksum();
-    end = clock();
-    build_time = (double)(end - start) / CLOCKS_PER_SEC;
 
-    /* Students must add clock-based timing and print required lines. */
-
-    build_dataset();
-    process_dataset();
-    checksum = reduce_checksum();
     if (checksum == 0ul)
 	printf("impossible\n");
 
-    printf("Total time is: %f", reduce_checksum + process_dataset, build_dataset);
-    printf("Build Dataset time: %f", build_dataset);
-    printf("Process Dataset time: %f", reduce_checksum);
+    printf("Total time is: %.6f\n", reduce_checksum + process_dataset, build_dataset);
+    printf("Build Dataset time: %.6f\n", build_dataset);
+    printf("Process Dataset time: %.6f\n", reduce_checksum);
 
 
     /* Required output (exact format, no extra lines):
