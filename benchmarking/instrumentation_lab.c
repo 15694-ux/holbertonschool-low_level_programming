@@ -78,26 +78,35 @@ int main(void)
     start_time = clock();
     process_dataset();
     end_time = clock();
-    process_start_time;
-    process_end_time;
+    process_start_tim = start_time;
+    process_end_time = end_time;
+    start_time = clock();
+    checksum = reduce_checksum();
+    end_time = clock();
+    reduce_start_time = start_time;
+    reduce_end_time = end_time;
 
+    total_build_time = build_end_time - build_start_time;
+    total_process_time = process_end_time - process_start_time;
+    total_reduce_time = reduce_end_time - reduce_start_time;
 
-
-
+    build_seconds = (double)total_build_time / CLOCKS_PER_SEC;
+    process_seconds = (double)total_process_time / CLOCKS_PER_SEC;
+    reduce_seconds = (double)totale_reduce_time / CLOCKS_PER_SEC:
+    
     if (checksum == 0ul)
 	printf("impossible\n");
 
-    printf("Total time is: %.6f\n", reduce_checksum + process_dataset, build_dataset);
-    printf("Build Dataset time: %.6f\n", build_dataset);
-    printf("Process Dataset time: %.6f\n", reduce_checksum);
-
-
-    /* Required output (exact format, no extra lines):
-     * TOTAL seconds: <float>
-     * BUILD_DATA seconds: <float>
-     * PROCESS seconds: <float>
-     * REDUCE seconds: <float>
-     */
+    printf("TOTAL seconds:: %.6f\n";
+    printf("BUILD_DATA seconds: %.6f\n";
+    printf("PROCESS seconds: %.6f\n";
+    printf("REDUCE seconds: %.6f\n";
+	    /* Required output (exact format, no extra lines):
+	     * TOTAL seconds: <float>
+	     * BUILD_DATA seconds: <float>
+	     * PROCESS seconds: <float>
+	     * REDUCE seconds: <float>
+	     */
 
     return 0;
 }
