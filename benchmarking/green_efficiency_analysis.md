@@ -36,4 +36,22 @@ REDUCE seconds: 0.000135'
 
 The result of pass three, above, showed that while the build and reduce times lowered, the process time actually took longer than the first and second passes.
 
+In summary of the observation:
 
+Pass one was the slowest of the three.
+Passes two and three were nearly the same.
+The main difference I noticed was the reduction in process time from pass one to two being faster, then pass two to three being slower.
+
+__
+
+## ##Relation Between Runtime vs. Energy Consumption##
+
+As this task was to calculate the time it took for each process to run and line that up with energy consumption, my findings are as follows.
+Across the three tasks, the overall time of each pass was lower each time the program ran, however the time from pass one 'PROCESS seconds: 0.000315', to pass two 'PROCESS seconds: 0.000307', and pass three 'PROCESS seconds: 0.000319', showed that while the processing time from pass one was improved upon in pass two, the process time in pass three was slower than pass one. This indicates to me that the processing time is what causes the highest consumption across passes.
+
+--
+
+## ##Limitations##
+
+All tests for this particular task were executed from a sandbox, put together and processed remotely by myself. This would leave the testing pool particularly low and may not reflect testing on a wider range of systems.
+As I only tested the program three times, the testing doesn't have as broad a pool for results as  
