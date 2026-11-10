@@ -63,7 +63,7 @@ int main(void)
     clock_t reduce_end;
     clock_t total_build;
     clock_t total_process;
-    clock_t totale_reduce;
+    clock_t total_reduce;
     double build_seconds;
     double process_seconds;
     double reduce_seconds;
@@ -73,34 +73,36 @@ int main(void)
     start_time = clock();
     build_dataset();
     end_time = clock();
-    build_start_time = start_time;
-    build end_time = end_time;
+    build_start = start_time;
+    build_end = end_time;
     start_time = clock();
     process_dataset();
     end_time = clock();
-    process_start_tim = start_time;
-    process_end_time = end_time;
+    process_start = start_time;
+    process_end = end_time;
     start_time = clock();
     checksum = reduce_checksum();
     end_time = clock();
-    reduce_start_time = start_time;
-    reduce_end_time = end_time;
+    reduce_start = start_time;
+    reduce_end = end_time;
 
-    total_build_time = build_end_time - build_start_time;
-    total_process_time = process_end_time - process_start_time;
-    total_reduce_time = reduce_end_time - reduce_start_time;
+    total_time = reduce_end - build_start;
+    total_build = build_end - build_start;
+    total_process = process_end - process_start;
+    total_reduce = reduce_end - reduce_start;
 
-    build_seconds = (double)total_build_time / CLOCKS_PER_SEC;
-    process_seconds = (double)total_process_time / CLOCKS_PER_SEC;
-    reduce_seconds = (double)totale_reduce_time / CLOCKS_PER_SEC:
+    total_seconds = (double)total_time / CLOCKS_PER_SEC;
+    build_seconds = (double)total_build / CLOCKS_PER_SEC;
+    process_seconds = (double)total_process / CLOCKS_PER_SEC;
+    reduce_seconds = (double)total_reduce / CLOCKS_PER_SEC;
     
     if (checksum == 0ul)
 	printf("impossible\n");
 
-    printf("TOTAL seconds:: %.6f\n";
-    printf("BUILD_DATA seconds: %.6f\n";
-    printf("PROCESS seconds: %.6f\n";
-    printf("REDUCE seconds: %.6f\n";
+    printf("TOTAL seconds: %.6f\n", total_seconds);
+    printf("BUILD_DATA seconds: %.6f\n", build_seconds);
+    printf("PROCESS seconds: %.6f\n", process_seconds);
+    printf("REDUCE seconds: %.6f\n", reduce_seconds);
 	    /* Required output (exact format, no extra lines):
 	     * TOTAL seconds: <float>
 	     * BUILD_DATA seconds: <float>
