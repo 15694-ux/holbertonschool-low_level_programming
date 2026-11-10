@@ -47,11 +47,21 @@ __
 ## ##Relation Between Runtime vs. Energy Consumption##
 
 As this task was to calculate the time it took for each process to run and line that up with energy consumption, my findings are as follows.
-Across the three tasks, the overall time of each pass was lower each time the program ran, however the time from pass one 'PROCESS seconds: 0.000315', to pass two 'PROCESS seconds: 0.000307', and pass three 'PROCESS seconds: 0.000319', showed that while the processing time from pass one was improved upon in pass two, the process time in pass three was slower than pass one. This indicates to me that the processing time is what causes the highest consumption across passes.
+Across the three tasks, the overall time of each pass was lower each time the program ran, however the time from pass one 'PROCESS seconds: 0.000315', to pass two 'PROCESS seconds: 0.000307', and pass three 'PROCESS seconds: 0.000319', showed that while the processing time from pass one was improved upon in pass two, the process time in pass three was slower than pass one. 
 
 --
 
 ## ##Limitations##
 
 All tests for this particular task were executed from a sandbox, put together and processed remotely by myself. This would leave the testing pool particularly low and may not reflect testing on a wider range of systems.
-As I only tested the program three times, the testing doesn't have as broad a pool for results as  
+As I only tested the program three times, the testing doesn't have as broad a pool for results as would be most informative.
+As this test was exclusively based around processing times, the processing time vs. energy consumption rates are purely speculative and to be taken with a grain of salt.
+
+--
+
+## ##Key Engineering Takeaway##
+
+The idea behind this task was to track the time it took to for processes to run and identify which process took the longest to complete. It could be speculated that longer processing times leads to higher energy consumption. For a more thorough result it would be a good idea to implement changes to also track energy consumption, however, unless that is requested it would be best practice to attempt to optimize the code in an effort to reduce processing time and by extension reduce energy consumption per pass for future testing.
+
+
+Authored by Jack Brincat.
