@@ -5,7 +5,7 @@
 My task for this project was to utilize the provided code to determine the time each process took to complete, then to have that data printed for documentation for each individual process as well as the overall time.
 First step was to identify which functions or modules were needed. Having been given the requirement of using 'clock()' and 'clock_t' from '<time.h>', looking into the function of these made it apparent that it would be used to track the start and end times of each process as it was called on. Once the times were documented and stored, using 'CLOCKS_PER_SEC' and the '%.6f' formatting, it printed the times for all processes including total time down to the sixth decimal place allowing for a more accurate idea of the process times.
 
-__
+
 
 ## ##Observed Performance Differences##
 
@@ -42,14 +42,14 @@ Pass one was the slowest of the three.
 Passes two and three were nearly the same.
 The main difference I noticed was the reduction in process time from pass one to two being faster, then pass two to three being slower.
 
-__
+
 
 ## ##Relation Between Runtime vs. Energy Consumption##
 
 As this task was to calculate the time it took for each process to run and line that up with energy consumption, my findings are as follows.
 Across the three tasks, the overall time of each pass was lower each time the program ran, however the time from pass one 'PROCESS seconds: 0.000315', to pass two 'PROCESS seconds: 0.000307', and pass three 'PROCESS seconds: 0.000319', showed that while the processing time from pass one was improved upon in pass two, the process time in pass three was slower than pass one. 
 
---
+
 
 ## ##Limitations##
 
@@ -57,7 +57,7 @@ All tests for this particular task were executed from a sandbox, put together an
 As I only tested the program three times, the testing doesn't have as broad a pool for results as would be most informative.
 As this test was exclusively based around processing times, the processing time vs. energy consumption rates are purely speculative and to be taken with a grain of salt.
 
---
+
 
 ## ##Key Engineering Takeaway##
 
