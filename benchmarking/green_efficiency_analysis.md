@@ -9,7 +9,20 @@ __
 
 ## ##Observed Performance Differences##
 
+Pass 1
 'TOTAL seconds: 0.000825
 BUILD_DATA seconds: 0.000301
 PROCESS seconds: 0.000315
 REDUCE seconds: 0.000207'
+
+Pass 2
+'TOTAL seconds: 0.000743
+BUILD_DATA seconds: 0.000291
+PROCESS seconds: 0.000307
+REDUCE seconds: 0.000143'
+
+Pass 3
+'TOTAL seconds: 0.000742
+BUILD_DATA seconds: 0.000287
+PROCESS seconds: 0.000319
+REDUCE seconds: 0.000135'
