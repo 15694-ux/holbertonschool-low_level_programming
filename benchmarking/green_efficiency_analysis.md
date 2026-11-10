@@ -13,6 +13,7 @@ I ran the program three times to get an idea on how the processes would compare 
 
 
 Pass 1
+------
 `TOTAL seconds: 0.000825`\
 `BUILD_DATA seconds: 0.000301`\
 `PROCESS seconds: 0.000315`\
@@ -21,6 +22,7 @@ Pass 1
 The results of pass one, above, acted as a baseline for each of the following runs.
 
 Pass 2
+------
 `TOTAL seconds: 0.000743`\
 `BUILD_DATA seconds: 0.000291`\
 `PROCESS seconds: 0.000307`\
@@ -29,6 +31,7 @@ Pass 2
 The results of pass two, above, showed an marginal improvement across the board but most visibily with the reduce.
 
 Pass 3
+------
 `TOTAL seconds: 0.000742`\
 `BUILD_DATA seconds: 0.000287`\
 `PROCESS seconds: 0.000319`\
