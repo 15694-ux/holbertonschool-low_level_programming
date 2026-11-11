@@ -3,7 +3,7 @@
  * _puts - will print a string with a new line
  * @str: pointer to str
  */
-void _putchar(char *str)
+void _puts(char *str)
 {
 	int i;
 
