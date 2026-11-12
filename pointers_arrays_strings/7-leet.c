@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * leet(char *) - Will change selected alpha to numeral
+ * leet - Will change selected alpha to numeral
  * @p: Points to string
  * Return: Returns to modified string
  */
