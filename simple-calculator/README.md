@@ -16,7 +16,6 @@ The intent of this project is to create a simple calculator as an exmaple of acq
 - Implement all operators: +, -, /, and *
 
 
-
-
 # Documentation of progress
-
+The following compiler flags are required for this project:
+- gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
