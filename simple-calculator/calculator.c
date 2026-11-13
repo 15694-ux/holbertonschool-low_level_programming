@@ -4,6 +4,13 @@
 int main(void)
 {
 	int input; /* Initialize input function */
+	int s1;
+	int s2;
+	int d;
+	int result;
+
+	result = s1 + s2 || s1 - s2 || s1 * s2 || s1 / s2;
+	d  = input;
 
 	printf("Simple Calculator\n"); /* Menu for user selection and input */
 	printf("1) Add\n");
@@ -19,15 +26,38 @@ int main(void)
 		printf("Exiting now, have a pleasant day.");
 		return (0);
 	}
-	else (input == '1')
+	else if (input == '1')
 	{
 		printf("Addition");
 		printf("Please enter numbers to add: ");
-		scanf(
-	else (input == '2')
+		scanf("%d", "%d", s1, s2);
+
+		return (result);
+
+	}		
+	else if (input == '2')
+	{
 		printf("Subtraction");
-	else (input == '3')
+		printf("Please enter numbers to subtract: ");
+		scanf("%d", "%d", s1, s2);
+
+		return (result);
+
+	}
+	else if (input == '3')
+	{
 		printf("Multiplication");
+		printf("Please enter numbers to multiply: ");
+		scanf("%d", "%d", s1, s2);
+
+		return (results);
+	}
 	else (input == '4')
+	{
 		printf("Division");
+		printf("Please enter numbers to divide: ");
+		scanf("%d", "%d", s1, s2);
+
+		return (results);
+	}
 }
