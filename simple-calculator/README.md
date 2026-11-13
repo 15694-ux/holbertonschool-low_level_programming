@@ -19,3 +19,8 @@ The intent of this project is to create a simple calculator as an exmaple of acq
 # Documentation of progress
 The following compiler flags are required for this project:
 - gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
+
+Task 0:
+Started with the title of the program "Simple Calculator". Set up menu for operations. 1 through to 4, with a 0 to quit.
+Opted to cap potential decimal places at 10 to prevent possible excessive output for calculations. %.10f
+
