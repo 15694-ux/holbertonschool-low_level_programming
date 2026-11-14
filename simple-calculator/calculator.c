@@ -21,43 +21,41 @@ int main(void)
 	printf("Please make a selection.");
 	scanf("%d", &input); /* Input line */
 	
-	if (input == '0') /* Operation commands */
-	{
-		printf("Exiting now, have a pleasant day.");
-		return (0);
-	}
-	else if (input == '1')
+	if (input == '1') /* Operation commands */
 	{
 		printf("Addition");
-		printf("Please enter numbers to add: ");
-		scanf("%d", "%d", s1, s2);
+                printf("Please enter numbers to add: ");
+                scanf("%d", "%d", s1, s2);
 
-		return (result);
-
-	}		
+                return (results);
+	}
 	else if (input == '2')
 	{
 		printf("Subtraction");
-		printf("Please enter numbers to subtract: ");
-		scanf("%d", "%d", s1, s2);
+                printf("Please enter numbers to subtract: ");
+                scanf("%d", "%d", s1, s2);
 
-		return (result);
+                return (results);
 
-	}
 	else if (input == '3')
 	{
 		printf("Multiplication");
 		printf("Please enter numbers to multiply: ");
 		scanf("%d", "%d", s1, s2);
 
-		return (results);
+		return (result);
 	}
-	else (input == '4')
+	else if (input == '3')
 	{
 		printf("Division");
-		printf("Please enter numbers to divide: ");
+		printf("Please enter numbers to dicide: ");
 		scanf("%d", "%d", s1, s2);
 
 		return (results);
+	}
+	else (input == '0')
+        {
+                printf("Exiting now, have a pleasant day.");
+                return (0);
 	}
 }
