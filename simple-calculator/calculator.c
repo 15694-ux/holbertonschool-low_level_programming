@@ -2,6 +2,8 @@
 /**
  * This is a simple calculator for the purposes of Holbertons Software Engineering sprint
  * 
+ * Authored and created by Jack Brincat, completed as at 15/11/2026
+ *
  * This is to demonstrate ability to code a program following specifications and 
  * applying my knowledge to do so
  *
