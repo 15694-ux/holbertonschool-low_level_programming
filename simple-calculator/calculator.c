@@ -30,7 +30,7 @@ int main(void)
 		printf("\nEnter your calculation using only +, -, *, and /: "); /* Input request with defined operators */
 		if (scanf("%lf %c %lf", &s1, &op, &s2) != 3) /* Scanf to read user input and store values */
 		{
-			printf("Invalid input, please try again.\n"); /* In the event of invalid input */
+			printf("Invalid input.\n"); /* In the event of invalid input */
 			break;
 		}
 
