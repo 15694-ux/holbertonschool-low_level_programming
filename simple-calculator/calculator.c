@@ -31,7 +31,7 @@ int main(void)
 		if (scanf("%lf %c %lf", &s1, &op, &s2) != 3) /* Scanf to read user input and store values */
 		{
 			printf("Invalid input, please try again.\n"); /* In the event of invalid input */
-			return 1;
+			break;
 		}
 
 		switch (op) /* Opted to use switch in place of if / else bloat */
