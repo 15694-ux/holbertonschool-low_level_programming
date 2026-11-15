@@ -199,7 +199,7 @@ Think of a house and a slip of paper with its address on it. The house is your d
 The paper isn't the house, but it tells you exactly where to find it, and if you go there you can look at the contents or change them.  
 
 Example script  
-`c  
+c  
 #include <stdio.h>
 
 int main(void) {
@@ -234,7 +234,7 @@ int main(void) {
     }
 
     return 0; 
-}`  
+}  
 
 
 
