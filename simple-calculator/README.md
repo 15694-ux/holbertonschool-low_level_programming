@@ -21,8 +21,7 @@ Programming for Standard Order of Operations to follow accepted rules in relatio
 
 ## Basic Operational Requirements
 - Design a small, complete C program from requirements
-- Menu driven
-- User friendly
+- Must be user friendly
 
 
 ## Scripting Requirements
