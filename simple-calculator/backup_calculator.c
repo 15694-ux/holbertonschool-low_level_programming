@@ -7,16 +7,12 @@ int main(void)
 {
 	int choice;
 	int x;
-	char op;
-	char again;
 	double s1;
 	double s2;
-	double result;
 
 	choice = 0;
 	x = 1;
-	again = 'y';
-	
+		
 	while (x == 1)
 	{
 		printf("Simple Calculator\n");
@@ -27,58 +23,48 @@ int main(void)
 		printf("0) Quit\n");
 		printf("Make your selection: ");
 		scanf("%d", &choice);
-		
-		if (scanf("%le %c %le", &s1, &op, &s2) != 3)
-		{
-			printf("Invalid input.\n");
-			break;
-		}
-		
-		
-		if (choice == 0)
-		{
-			x = 0;
-			printf("Exiting program\n");
-		}
-		else if (choice < 0 || choice > 4)
-		{
-			printf("Invalid input: \n");
-			scanf("%d", &choice);
-		}
-		else
+	
+		if (choice == 1)
 		{
 			printf("First input: ");
 			scanf("%le", &s1);
-			printf("Select operator: ");
-			scanf("%c", &op);
 			printf("Second input: ");
 			scanf("%le", &s2);
+			printf("s1 + s2 = %f\n", s1 + s2);
+		}
+		else if (choice == 2)
+		{
+			printf("First input: ");
+                        scanf("%le", &s1);
+                        printf("Second input: ");
+                        scanf("%le", &s2);
+			printf("s1 - s2 = %f\n", s1 - s2);
+		}
+		else if (choice == 3)
+		{
+			printf("First input: ");
+                        scanf("%le", &s1);
+                        printf("Second input: ");
+                        scanf("%le", &s2);
+                        printf("s1 * s2 = %f\n", s1 * s2);
+		}
+		else if (choice == 4)
+		{
+			printf("First input: ");
+                        scanf("%le", &s1);
+                        printf("Second input: ");
+                        scanf("%le", &s2);
+                        printf("s1 / s2 = %f\n", s1 / s2);
 		}
 		if (choice == 4 && s2 == 0)
 		{
 			printf("Invalid operation: Unable to divide by 0\n");
+			return (1);		
 		}
-		else switch(choice)
+		else 
 		{
-			case 1:
-				result = (s1 + s2);
-				break;
-			case 2:
-				result = (s1 - s2);
-				break;
-			case 3:
-				result = (s1 * s2);
-				break;
-			case 4:
-				result = (s1 / s2);
-				break;
+			printf("Thank you for using this program, have a pleasant day.\n");
+			return (0);
 		}
-		printf("%f %c %f = %f\n", s1, op, s2, result);
-		
-		printf("Make another calculation? (Y/N): ");
-		scanf(" %c", &again);
-		
-		}
-	printf("Thank you for using this program, have a pleasant day.\n");
-	return 0;
-}	
+	}
+}
