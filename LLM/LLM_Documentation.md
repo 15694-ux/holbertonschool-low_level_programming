@@ -246,7 +246,7 @@ ptr's own address:   0x7ffee4b2a1b0
 value via pointer:   10
 score after change:  99`
 
-The pointer operations to remember
+The pointer operations to remember  
 `Symbol			Where			Meaning
 int *ptr		declaration		ptr is a pointer to an int
 &score			expression		the address of score
