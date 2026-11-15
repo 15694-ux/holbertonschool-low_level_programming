@@ -246,12 +246,12 @@ value via pointer:   10
 score after change:  99    
 
 The pointer operations to remember  
-Symbol | Where | Meaning  
-int *ptr | declaration | ptr is a pointer to an int  
-&score | expression | the address of score  
-ptr = &score | assignment | make ptr point at score  
-*ptr | expression | the value at the address ptr holds (reading)  
-*ptr = 99 | assignment | change the value at that address (writing)  
-ptr = NULL | assignment | make ptr point at nothing  
+```Symbol	  	Where		Meaning  
+int *ptr  	declaration  	ptr is a pointer to an int  
+&score  	expression  	the address of score  
+ptr = &score  	assignment  	make ptr point at score  
+*ptr  		expression  	the value at the address ptr holds (reading)  
+*ptr = 99  	assignment  	change the value at that address (writing)  
+ptr = NULL  	assignment  	make ptr point at nothing```  
 
 The * appears in two roles: in a declaration it means "this is a pointer", and in an expression it means "follow the pointer". That double use is the most common source of confusion for beginners.
