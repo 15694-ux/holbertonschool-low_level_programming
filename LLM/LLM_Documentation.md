@@ -199,8 +199,8 @@ Think of a house and a slip of paper with its address on it. The house is your d
 The paper isn't the house, but it tells you exactly where to find it, and if you go there you can look at the contents or change them.  
 
 Example script  
-c  
-`#include <stdio.h>
+```c  
+#include <stdio.h>
 
 int main(void) {
     int score = 10;              // a normal variable holding the value 10
@@ -233,7 +233,10 @@ int main(void) {
         printf("%d\n", *ptr);    // skipped: dereferencing NULL would crash the program
     }
 
-    return 0; }`  
+    return 0; 
+}```  
+
+
 Example output  
 
 (Addresses will differ on your machine.)  
@@ -255,5 +258,5 @@ ptr = &score  	assignment  	make ptr point at score
 ptr = NULL  	assignment  	make ptr point at nothing```  
 
 The * appears in two roles: in a declaration it means "this is a pointer",  
- and in an expression it means "follow the pointer". 
+and in an expression it means "follow the pointer". 
 That double use is the most common source of confusion for beginners.
