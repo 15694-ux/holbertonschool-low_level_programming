@@ -33,8 +33,8 @@ char *str_concat(char *s1, char *s2)
 {
 	char *st1, *or1;
 	int fco;
-	
-	if (s1 == NULL) 
+
+	if (s1 == NULL)
 	{
 		s1 = "";
 	}
@@ -42,11 +42,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	
+
 	fco = char_count(s1, s2);
 	st1 = malloc(fco + 1);
 	or1 = st1;
-	
+
 	if (st1 == NULL)
 	{
 		return (NULL);
