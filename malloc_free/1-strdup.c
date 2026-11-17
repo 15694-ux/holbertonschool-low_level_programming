@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 /**
  * _strdup(char *str) - Returns pointed to newly allocated space in
  * which contains a copy of the string given
@@ -11,13 +10,20 @@ char *_strdup(char *str)
 {
 	char *dupe; /** Points to address **/
 	char *orig; /** Points to address **/
+	int count; /** Stores a value **/
+
+	count = 0; /** Init count **/
 
 	if (str == NULL) /** Checks if str is null **/
 	{
 		return (NULL);
 	}
+	while (str[count] != '\0')
+	{
+		count = count + 1; /** Increments count value **/
+	}
 
-	dupe = malloc(strlen(str) + 1); /** Assigns address to dupe and allocates memory **/
+	dupe = malloc(count + 1); /** Assigns address to dupe and allocates memory **/
 	orig = dupe; /** Storing dupe start pos for later use, will not move **/
 
 	if (dupe == NULL) /** Checks if dupe is null **/
