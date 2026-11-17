@@ -24,7 +24,7 @@ int **alloc_grid(int width, int height)
 		grid[h] = row;
 		h = h + 1;
 	}
-	
+
 	h = 0;
 
 	while (h < height)
