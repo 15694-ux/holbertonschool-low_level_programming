@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _strdup(char *str) - Returns pointed to newly allocated space in
+ * _strdup - Returns pointed to newly allocated space in
  * which contains a copy of the string given
- * @char *str: Designates strings to duplicate
+ * @str: Designates strings to duplicate
  * Return: Return char
  */
 char *_strdup(char *str)
@@ -36,6 +36,6 @@ char *_strdup(char *str)
 		dupe = dupe + 1; /** pointer increments **/
 		str = str + 1; /** pointer increments **/
 	}
-	*dupe = '\0'; /** dereferences pointer, drops null byte in last pointer position **/
-	return (orig); /** returns orig variable, default state of original dupe address **/
+	*dupe = '\0'; /** dereferences pointer, null byte in last pointer position **/
+	return (orig); /** returns orig variable, default state of dupe address **/
 }
