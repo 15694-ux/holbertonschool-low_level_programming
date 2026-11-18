@@ -13,13 +13,13 @@ int main(void)
 
 	while (1) /** Primary while loop **/
 	{
-		printf("Simple Calculator\n"); /** Menu **/
-		printf("1) Addition\n");
-		printf("2) Subtraction\n");
-		printf("3) Multiplication\n");
-		printf("4) Division\n");
-		printf("0) Quit\n");
-		printf("Make your selection: ");
+		printf("Simple Calculator\n"
+		"1) Addition\n"
+		"2) Subtraction\n"
+		"3) Multiplication\n"
+		"4) Division\n"
+		"0) Quit\n"
+		"Make your selection: ");
 		scanf("%d", &choice);
 
 		if (choice == 1) /** Addition **/
