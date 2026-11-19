@@ -12,7 +12,7 @@ typedef struct dog
 /**
  * init_dog - Function for initializing variable
  */
-void init_dog(struct_dog *d, char *name, float age, char *owner);
+void init_dog(struct dog *d, char *name, float age, char *owner);
 /**
  * print_dog - Prints stored information of the struct
  */
