@@ -48,6 +48,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		b = (n);
 	}
+	else
+	{
+		b = _strlen(s2);
+	}
 	a = _strlen(s1);
 	i = 0;
 	j = 0;
