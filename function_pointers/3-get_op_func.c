@@ -1,10 +1,10 @@
 #include "3-calc.h"
 /**
- * get_op_function - Selects function matching operator
+ * get_op_func - Selects function matching operator
  * @s: Operator passed as argument to program
  * Return: Pointer to matching function, NULL if no match
  */
-int (*get_op_func(char *s))(int, int) /** Function **/
+int (*get_op_func(char *s))(int a, int b) /** Function **/
 {
 	op_t ops[] = {
 		{"+", op_add},
