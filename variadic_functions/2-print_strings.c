@@ -3,11 +3,11 @@
 #include <string.h>
 #include "variadic_functions.h"
 /**
- * print_strings - Prints a string of characters
+ * print_string - Prints a string of characters
  * @separator: Separators
  * @n: Integer to be passed
  */
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_string(const char *separator, const unsigned int n, ...)
 {
 	va_list printarg;
 	unsigned int i;
