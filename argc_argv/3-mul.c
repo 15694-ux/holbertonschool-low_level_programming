@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("ERROR! You made a booboo!\n");
+		printf("ERROR!\n");
 		return (1);
 	}
 	i = atoi(argv[1]);
